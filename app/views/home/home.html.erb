@@ -1,4 +1,12 @@
-<h1> Welcome to Alpha-Blog</h1>
-
-<%= link_to 'About Page', about_path %>
-<%= link_to 'Return to articles listing', articles_path %> 
+<%= render 'navbar'%>
+<br/>
+<div class="container-fluid bg-light text-dark p-5">
+  <div class="container bg-light p-5">
+    <h1 class="display-4 fw-bold">It is the Way of the Warrior.</h1>
+    <hr>
+    <p>“There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing outside of yourself.” — Miyamoto Musashi
+    </p>
+    <img src="https://highexistence.com/wp-content/uploads/2020/02/Screen-Shot-2018-11-10-at-19.02.09-1070x535-1-709x355.png" class="img-responsive center-block d-block mx-auto border border-dark" alt="samurai image">
+  </div>
+</div>
+<%= render 'footer' %>

@@ -1,4 +1,11 @@
-<h1>This is the about page</h1>
-
-<%= link_to 'Home Page', root_path %>
-<%= link_to 'Return to articles listing', articles_path %>
+<%= render 'navbar'%>
+  <div class="container-fluid bg-light text-dark p-5">
+    <div class="container bg-light p-5">
+      <h1 class="display-4 fw-bold">21 Rules for life </h1>
+      <hr>
+      <p>“There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing outside of yourself.” — Miyamoto Musashi
+      </p>
+      <img src="https://highexistence.com/wp-content/uploads/2020/02/4e8b9b3e8c5043a1915951318af2f3bb-709x917.jpg">
+    </div>
+  </div>
+<%= render 'footer' %>

@@ -1,7 +1,8 @@
-<h1> This is the Article show page</h1>
+<%= render 'home/navbar'%>
 <p>Title: <%=@article.title%></p>
 <p>Description: <%=@article.description%></p>
-
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Return to articles listing', articles_path %> | 
-<%= button_to 'Delete', article_path(@article), method: :delete, form: { data: { turbo_confirm: "Are you sure?" }}%>  
+<%= button_to 'Delete', article_path(@article), method: :delete, form: { data: { turbo_confirm: "Are you sure?" }}%>
+<%= render 'home/footer'%>
+
